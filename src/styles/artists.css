@@ -221,8 +221,14 @@
 }
 
 @media (max-width: 480px) {
+    .image-torn-top,
+  .image-torn-bottom {
+    width: 100%;
+    left: 0;
+  }
     .artists-section {
         padding: 60px 15px;
+        overflow-x: hidden;
     }
      .artists-heading-container img {
         margin-bottom: -80px;
@@ -241,8 +247,8 @@
 
     .image-torn-top,
     .image-torn-bottom {
-        width: 252px;
-        left: 47px;
+        max-width: 252px;
+        margin-left: 66px;
     }
 
     .artist-name {
