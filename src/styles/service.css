@@ -215,6 +215,7 @@
   .services-nav {
     gap: 58px;
     margin-top: 100px;
+     grid-template-columns: repeat(3, 1fr);
   }
 
   .service-item {
@@ -275,13 +276,21 @@
     max-width: 100%;
   }
   .services-nav {
+   
     gap: 15px;
     margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+   margin-left: 50px;
+     
   }
 
   .service-image {
     width: 100px;
     height: 100px;
+    
+  
   }
 
   .image-container .torn {
