@@ -1,0 +1,321 @@
+.services {
+  background: linear-gradient(135deg, #f4d03f 0%, #f7dc6f 50%, #f4d03f 100%);
+  padding: 60px 15px;
+  position: relative;
+}
+
+.services::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 25px;
+  background-image: url('/torn-bootom.png');
+  background-repeat: repeat-x;
+  background-size: auto 100%;
+  transform: rotate(180deg);
+  z-index: 2;
+}
+
+.services::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 25px;
+  background-image: url('/torn-bootom.png');
+  background-repeat: repeat-x;
+  background-size: auto 100%;
+  z-index: 10;
+}
+
+.services-heading-container {
+  text-align: center;
+  position: relative;
+}
+
+.services-heading-container img {
+  bottom: 0px;
+  max-width: 80%;
+}
+
+.services-heading {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #5d4e37;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin: 0;
+  position: relative;
+}
+
+.services-heading::after {
+  content: '~';
+  display: block;
+  font-size: 1.2rem;
+  margin-top: 8px;
+  color: #5d4e37;
+}
+
+.content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.services-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  margin-top: 60px;
+  flex-wrap: wrap;
+}
+
+.service-item {
+  text-align: center;
+  position: relative;
+  flex: 1 1 100%;
+}
+
+.image-container {
+  position: relative;
+  margin-bottom: 12px;
+  display: inline-block;
+}
+
+.service-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.service-image:hover {
+  transform: translateY(-5px);
+}
+
+.image-container .torn {
+  position: absolute;
+  top: -6px;
+  left: 0;
+  right: 0;
+  height: 15px;
+  background-image: url('/torn-bootom.png');
+  background-repeat: repeat-x;
+  background-size: auto 100%;
+  z-index: 3;
+  transform: rotate(180deg);
+  width: 100%;
+}
+
+.service-item p {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #5d4e37;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.featured-service {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  max-width: 600px;
+  margin: 40px auto 0;
+}
+
+.featured-service .torn {
+  position: absolute;
+  top: -4px;
+  left: 0;
+  right: 0;
+  height: 20px;
+  max-width: 100%;
+  background-image: url('/torn-bootom.png');
+  background-repeat: repeat-x;
+  background-size: auto 100%;
+  z-index: 3;
+  transform: rotate(180deg);
+  filter: sepia(100%) saturate(200%) hue-rotate(20deg) brightness(1.2);
+  width: 100%;
+}
+
+.featured-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.featured-text {
+  margin-top: 40px;
+  padding: 20px 30px;
+  width: 100%;
+  text-align: center;
+  max-width: 600px;
+}
+
+.featured-text h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+}
+
+.featured-text p {
+  position: relative;
+  font-size: 0.9rem;
+  max-width: 100%;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.featured-text button {
+  border: none;
+  padding: 10px 25px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(93, 78, 55, 0.3);
+}
+
+.featured-text button:hover {
+  background: #4a3f2f;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(93, 78, 55, 0.4);
+}
+
+@media (min-width: 768px) {
+  .services {
+    padding: 80px 20px;
+  }
+
+  .services-heading {
+    font-size: 2.5rem;
+  }
+
+  .services-heading-container img {
+    margin-bottom: -120px;
+    max-width: 100%;
+  }
+
+  .services-nav {
+    gap: 58px;
+    margin-top: 100px;
+  }
+
+  .service-item {
+    flex: 1 1 15%;
+  }
+
+  .service-image {
+    width: 150px;
+    height: 150px;
+  }
+
+  .image-container .torn {
+    height: 20px;
+    top: -8px;
+  }
+
+  .service-item p {
+    font-size: 0.9rem;
+  }
+
+  .featured-service {
+    max-width: 700px;
+  }
+
+  .featured-image {
+    height: 300px;
+  }
+
+  .featured-text {
+    padding: 30px 40px;
+  }
+
+  .featured-text h2 {
+    font-size: 2rem;
+  }
+
+  .featured-text p {
+    font-size: 1rem;
+  }
+
+  .featured-text button {
+    padding: 12px 30px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .services {
+    padding: 40px 10px;
+  }
+
+  .services-heading {
+    font-size: 1.8rem;
+  }
+
+  .services-heading-container img {
+    margin-bottom: -120px;
+    max-width: 100%;
+  }
+  .services-nav {
+    gap: 15px;
+    margin-top: 40px;
+  }
+
+  .service-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .image-container .torn {
+    height: 12px;
+    top: -5px;
+  }
+
+  .service-item p {
+    font-size: 0.7rem;
+  }
+
+  .featured-service {
+    max-width: 100%;
+    margin-top: 30px;
+  }
+
+  .featured-image {
+    height: 200px;
+  }
+
+  .featured-text {
+    padding: 15px 20px;
+  }
+
+  .featured-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .featured-text p {
+    font-size: 0.8rem;
+  }
+
+  .featured-text button {
+    padding: 8px 20px;
+    font-size: 0.8rem;
+  }
+}
